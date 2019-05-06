@@ -1,0 +1,19 @@
+{
+  "display_name": "PySpark",
+  "language": "python",
+  "argv": [
+    "ANACONDA3/python",
+    "-m",
+    "ipykernel",
+    "-f",
+    "{connection_file}"
+  ],
+  "env": {
+    "SPARK_HOME": "ANACONDA3/lib/site-packages/pyspark",
+    "PYTHONPATH": "ANACONDA3/lib/site-packages/pyspark/python/:ANACONDA3/lib/site-packages/pyspark/python/lib/py4j-0.10.4-src.zip",
+    "PYSPARK_DRIVER_PYTHON": "ANACONDA3/python",
+    "PYSPARK_PYTHON": "ANACONDA3/python",
+    "PYSPARK_SUBMIT_ARGS": "--master local[*] pyspark-shell",
+    "PYTHONSTARTUP": "ANACONDA3/lib/site-packages/pyspark/python/pyspark/shell.py"
+  }
+}
